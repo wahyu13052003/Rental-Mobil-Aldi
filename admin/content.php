@@ -1,0 +1,28 @@
+<?php
+	include('koneksi.php');
+	if(isset($_GET['page'])){
+		if($_GET['page']=='home'){
+			include('halaman/home.php');
+		}elseif($_GET['page']=='sopir'){
+			include('halaman/sopir.php');
+		}elseif($_GET['page']=='editsopir'){
+			include('halaman/edit_sopir.php');
+		}elseif($_GET['page']=='merk'){
+			include('halaman/merk.php');
+		}elseif($_GET['page']=='editmerk'){
+			include('halaman/edit_merk.php');
+		}elseif($_GET['page']=='costumer'){
+			include('halaman/costumer.php');
+		}elseif($_GET['page']=='mobil'){
+			include('halaman/mobil.php');
+		}elseif($_GET['page']=='editmobil'){
+			include('halaman/edit_mobil.php');
+		}elseif($_GET['page']=='sewa'){
+			include('halaman/sewa.php');
+		}elseif($_GET['page']=='detail'){
+			include('halaman/detail.php');
+		}else{
+			include('halaman/home.php');
+		}
+	}
+?>
